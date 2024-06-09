@@ -1,0 +1,21 @@
+/*=============== VARIABLES CSS ===============*/
+
+:root {
+  /*========== Colors ==========*/
+  --default-color: #212529;
+  --light-color: #ffffff;
+  /*========== typography ==========*/
+  --font-default: "PT Sans Caption", sans-serif;;
+  --font-primary:"Pacifico", cursive; ;
+  --font-secondary:"Righteous", sans-serif;
+  --font-size-default: 1rem;
+}
+/*=============== BASE ===============*/
+body {
+  font-family: var(--font-default);
+  font-size: var(--font-size-default);
+  color: var(--default-color); 
+}
+::selection{
+  background-color: #FEC260;
+}
