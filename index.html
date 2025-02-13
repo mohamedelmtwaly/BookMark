@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Set character encoding and viewport for responsive design -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Page Title -->
+    <title>Bookmark</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/bookmark.png"
+      type="image/x-icon" />
+    <!-- Font Awesome CSS file -->
+    <link rel="stylesheet" href="assets/css/all.min.css"/>
+    <!-- Bootstrap CSS FILE -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- Custom CSS files -->
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <link rel="stylesheet" href="assets/css/general.css"/>
+    <link rel="stylesheet" href="assets/css/queries.css"/>
+  </head>
+  <body>
+    <!-- BODY-PAGE -->
+    <main class="bookmarker-page">
+      <div class="container">
+        <!-- PAGE-TITLE -->
+        <h1 class=>Bookmarker</h1>
+        <div class="row mt-5 ">
+          <!-- Form -->
+          <div class="py-2 col-12 inner-content-form">
+            <!-- TITLE-FORM -->
+            <h2 class="text-center p-3 mb-4 "><i class="fa-solid fa-bookmark me-1"></i>Bookmark your favorite sites<i class="fa-solid fa-bookmark ms-1"></i></h2>
+            <!-- USER-NAME-BOOK -->
+            <div class="col-12 mb-4">
+              <label for="siteName" class="form-label "><i class="fa-solid fa-book-bookmark me-2"></i>Site Name</label>
+              <input  type="text" name="user-name-book" class="form-control" id="siteName" placeholder="Bookmark Name" oninput="validateInputs(this)">
+            </div>
+            <!-- USER-URL-BOOK-->
+            <div class="col-12 mb-4">
+              <label for="siteUrl" class="form-label">  <i class="fa-solid fa-link me-2 "></i>Site URL</label>
+              <input  type="url" name="user-url-book" class="form-control" id="siteUrl" placeholder="Website URL" oninput="validateInputs(this)">
+            </div>
+            <!-- SUBMIT-BUTTON -->
+            <div class="text-center mb-4">
+              <button  id="addSiteBtn" onclick="addSite();" type="button" class="btn btn-danger d-inline-block mx-auto px-5 btn-style">Submit</button>
+              <button id="updateSiteBtn" type="button" class="btn btn-success  d-inline-block mx-auto px-5  d-none" onclick="updateSite();"  >Update</button>
+            </div>
+          </div>
+          <!-- overlay -->
+          <div id="windowNotValid" class="overlay d-flex justify-content-center align-items-center d-none">
+            <!-- MESSAGEALERT --> 
+            <div class="messageAlert bg-white rounded-2 p-4 shadow">
+              <div class="header-alert-content  d-flex  justify-content-between align-items-center">
+                <div class="icon-group">
+                  <span class="rounded-circle me-2"></span>
+                  <span class="rounded-circle me-2"></span>
+                  <span class="rounded-circle me-2"></span>
+                </div>
+  
+                <button id="btnClose" onclick="closeWindowNotValid()" class=" btn border-0  "><i  class="fa-solid fa-xmark close fs-3"></i></button>
+
+              </div>
+              <p class=" fs-5 fw-bold ">Site Name or Url is not valid, Please follow the <br> rules below :</p>
+              <ul class="list-unstyled">
+                <li><i class="fa-regular fa-circle-right p-2"></i> <span>Site name must contain at least 3 characters
+                </span></li>
+                <li><i class="fa-regular fa-circle-right p-2"></i> <span>Site URL must be a valid one</span></li>
+              </ul>
+            </div>
+          </div>
+          <input  id="searchInput" type="search"  class="form-control mt-3" placeholder="Search " oninput="searchSite()">
+          <!-- BOOKS-TABLE -->
+          <table class="bg-white mt-3">
+            <thead>
+              <th>Index</th>
+              <th>Website Name</th>
+              <th>Visit</th>
+              <th>Update</th>
+              <th>Delete</th>
+            </thead>
+            <tbody id="bodyTable">
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+    <!-- Bootstrap-JAVASCRIPT-FILE -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom-JAVASCRIPT-File -->
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+/* ==================THE-PAGE========================== */
+.bookmarker-page {
+  padding: 3.5rem 0;
+  background-color: #f7ecde;
+  position: relative;
+  min-height: 100vh;
+}
+/* ==================TITLE-PAGE========================== */
+h1 {
+  text-align: center;
+  font-family: var(--font-primary);
+  font-size: 3.125rem;
+  font-weight: 500;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 1;
+  text-align: center;
+}
+h1::before {
+  content: "";
+  width: 255px;
+  bottom: 6px;
+  height: 1.5rem;
+  background-color: #fec260;
+  position: absolute;
+  z-index: -1;
+  transition: all 0.5s;
+}
+h1:hover::before {
+  height: 60%;
+}
+.inner-content-form {
+  border-top: 2px dotted #352e28;
+  border-bottom: 2px dotted #352e28;
+}
+h2 {
+  font-size: 1.5625rem;
+  font-family: var(--font-secondary);
+  font-weight: 500;
+  background: linear-gradient(to right, #41a55b, #b2ac4a);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+label {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.form-control:focus {
+  border-color: #d99c39;
+  box-shadow: 0 0 0 0.25rem #fec26055;
+}
+.btn-style {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #d1512d;
+  --bs-btn-border-color: #d1512d;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #bb4120;
+  --bs-btn-hover-border-color: #a03315;
+}
+.btn-style:hover {
+  color: var(--bs-btn-hover-color);
+  background-color: var(--bs-btn-hover-bg);
+  border-color: var(--bs-btn-hover-border-color);
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th,
+td {
+  border-bottom: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+th {
+  background-color: #f2f2f2;
+}
+/* alert message window */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(0, 0, 0, 0.3);
+  height: 100vh;
+  z-index: 1;
+}
+.messageAlert {
+  background-color: #fff;
+}
+.rounded-circle {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+.icon-group span:nth-child(1) {
+  background-color: #f15f5d;
+}
+.icon-group span:nth-child(2) {
+  background-color: #febe2e;
+}
+.icon-group span:nth-child(3) {
+  background-color: #4db748;
+}
+ul i {
+  color: #bb4120;
+}
