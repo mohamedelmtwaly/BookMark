@@ -3,7 +3,11 @@
 
 ## 🔍 Overview
 
-This project is a web-based CRUD (Create, Read, Update, Delete) system for managing website bookmarks. It allows users to add, view, update, delete, and search for bookmarks easily. The application is built using modern JavaScript (ES6), HTML5, CSS3, and Bootstrap for a responsive and user-friendly interface. All bookmark data is stored locally using the browser's localStorage.
+This project is a web-based CRUD (Create, Read, Update, Delete) system for managing website bookmarks.
+It allows users to add, view, update, delete, and search for bookmarks easily.
+The application is built using modern JavaScript (ES6), HTML5, CSS3, and Bootstrap
+for a responsive and user-friendly interface. All bookmark data is stored locally
+using the browser's localStorage.
 
 ## ✨ Features
 
@@ -38,9 +42,3 @@ This project is a web-based CRUD (Create, Read, Update, Delete) system for manag
 - **Bootstrap 4:** For responsive design and UI components.
 - **Font Awesome:** For using icons to improve the UI.
 - **localStorage:** For storing bookmark data locally in the browser.
-
-1. **Clone the Repository:**
-
-   ```bash
-   git clone https://github.com/your-username/bookmark-crud-system.git
-   cd bookmark-crud-system
