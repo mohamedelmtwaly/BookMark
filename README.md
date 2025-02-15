@@ -39,6 +39,6 @@ using the browser's localStorage.
 
 - **HTML5 & CSS3:** For structure and styling.
 - **JavaScript (ES6):** For implementing CRUD operations, search functionality, and real-time validation.
-- **Bootstrap 4:** For responsive design and UI components.
+- **Bootstrap:** For responsive design and UI components.
 - **Font Awesome:** For using icons to improve the UI.
 - **localStorage:** For storing bookmark data locally in the browser.
